@@ -1,0 +1,47 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:9090",
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9000,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "sourceMaps": false,
+            "file": "${workspaceRoot}/index.html"  //#每次需要修改这里的文件地址
+        },
+        {
+            "type": "edge",
+            "request": "launch",
+            "name": "Launch edge against localhost",
+            "url": "http://localhost:80",
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "type": "edge",
+            "request": "attach",
+            "name": "Attach to edge",
+            "port": 80,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "edge",
+            "request": "launch",
+            "sourceMaps": false,
+            "file": "${workspaceRoot}/index.html"  //#每次需要修改这里的文件地址
+        },
+    ]
